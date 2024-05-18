@@ -131,6 +131,7 @@ const AllProperties = () => {
                      <TableCell align="center">Property Address</TableCell>
                      <TableCell align="center">Owner Contact</TableCell>
                      <TableCell align="center">Property Amt</TableCell>
+                     <TableCell align="center">Property Likes</TableCell>
                      <TableCell align="center">Property Availabilty</TableCell>
                      <TableCell align="center">Action</TableCell>
                   </TableRow>
@@ -149,6 +150,7 @@ const AllProperties = () => {
                         <TableCell align="center">{property.propertyAddress}</TableCell>
                         <TableCell align="center">{property.ownerContact}</TableCell>
                         <TableCell align="center">{property.propertyAmt}</TableCell>
+                        <TableCell align="center">{property.likes}</TableCell>
                         <TableCell align="center">{property.isAvailable}</TableCell>
                         {/* <TableCell align="center"><img style={{width: 150, height: 150}} src={`http://localhost:8001${property.propertyImage.path}`} alt="photos" /></TableCell> */}
                         <TableCell align="center"><Button variant='outline-info' onClick={() => handleShow(property._id, 'Available')}>
